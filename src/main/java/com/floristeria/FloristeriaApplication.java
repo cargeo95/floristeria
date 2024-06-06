@@ -8,6 +8,7 @@ public class FloristeriaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(FloristeriaApplication.class, args);
+		System.out.println("app iniciada");
 	}
 
 }
