@@ -1,17 +1,21 @@
 package com.floristeria.entity;
 
+
+import java.time.LocalDate;
+
 import jakarta.persistence.*;
 import lombok.Data;
 
 @Data
 @Entity
-@Table(name="productos")
+@Table(name="pedidos")
 
-public class Producto {
+public class Pedido {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nombre;
-    private String color;
-    private Long costo;
+    private LocalDate fecha_pedido;
+    private LocalDate fecha_entrega;
+    private String total;
+    
 }

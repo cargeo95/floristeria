@@ -5,13 +5,16 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name="productos")
+@Table(name="proveedores")
 
-public class Producto {
+public class Proveedor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nombre;
-    private String color;
-    private Long costo;
+    private String direccion;
+    private String telefono;
+    private String correo;
+
+    
 }
